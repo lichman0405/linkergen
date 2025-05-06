@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Jupyter/IPython history
+.ipynb_checkpoints/
+
+# Virtual environment folders
+.venv/
+env/
+venv/
+.mofgen_env/
+*.egg-info/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Configuration secrets
+linkergen/config/secrets.yaml
+
+# Model weights
+linkergen/core/models/*.pickle
+
+# Output and logs
+*.log
+*.tmp
+*.out
+
+# Runtime artifacts
+*.bak
+*.swp
+*.swo
+
+# User-generated artifacts
+README.zh_CN.md
+README.md.bak

@@ -1,0 +1,17 @@
+You are an expert in MOF chemistry.
+Your task is to generate novel organic linker SMILES strings suitable for use with the given metal SBU.
+
+Target metal SBU: {{ metal_sbu }}
+
+Each linker must:
+- Contain at least two carboxylic acid (-COOH) groups.
+- Be chemically valid.
+- Be suitable for forming MOFs with {{ metal_sbu }} cluster.
+
+Here are known linker SMILES examples:
+{% for smi in examples %}
+{{ smi }}
+{% endfor %}
+
+Please generate {{ num }} new SMILES strings in the same format.
+Only output SMILES strings, one per line, without explanation.
